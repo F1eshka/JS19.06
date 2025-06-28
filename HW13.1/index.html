@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrickBreaker (Canvas)</title>
+</head>
+
+<body style="background-color: black; color: white; font-family: sans-serif; text-align: center; padding: 20px;">
+
+    <h1>BrickBreaker Game</h1>
+
+    <div style="margin-bottom: 15px;">
+        <button id="btnPlay">Старт</button>
+        <button id="btnPause" style="display: none;">Зупинити</button>
+        <button id="btnRetry" style="display: none;">Повторити</button>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        Очки: <strong id="pointCounter">0</strong> |
+        Спроби: <strong id="lifeCounter">3</strong>
+    </div>
+
+    <canvas id="canvasGame" width="800" height="600" style="border: 2px solid white;"></canvas>
+
+    <div id="screenEnd" style="display: none; margin-top: 20px;">
+        <h2>Кінець гри</h2>
+        <p id="scoreFinal">Результат: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
